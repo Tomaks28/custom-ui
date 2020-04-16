@@ -1,0 +1,56 @@
+.cui-navbar {
+  /* maintien de la bar en position fixe en haut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* La barre prend toute la largeur de la fenêtre */
+  width: 100%;
+  background: green;
+  /* On donne une hauteur à la barre */
+  height: 46px;
+}
+
+.cui-navbar__nav {
+  /* centrage des div entre elles */
+  display: flex;
+  align-items: center;
+  /* pour fixer la débordement du logo, on fixe la hauteur de la barre */
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.cui-navbar__logo {
+  margin-left: 1rem;
+}
+
+.cui-navbar__logo a {
+  color: white;
+  /* Supression des balises */
+  text-decoration: none;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.cui-navbar__items ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cui-navbar__items li {
+  padding: 0 0.5rem;
+}
+
+.cui-navbar__items a {
+  color: white;
+  /* Supression des balises */
+  text-decoration: none;
+}
+
+.cui-navbar__items a:hover,
+.cui-navbar__items a:active {
+  color: orange;
+}

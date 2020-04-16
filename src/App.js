@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Button, NavBar } from "./custom-ui";
+import "./custom-ui/index.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: "50px" }}>
+      {/* <NavBar sideDrawerContent={<Button />} /> */}
+      <NavBar
+        sideDrawerContent={
+          <div
+            style={{
+              color: "white",
+              flex: 1,
+              display: "flex",
+              background: "black",
+              flexDirection: "column",
+            }}
+          >
+            hello
+          </div>
+        }
+      />
+      <p>Le code suivant dans la page</p>
     </div>
   );
 }
